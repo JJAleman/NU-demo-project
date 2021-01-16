@@ -7,7 +7,7 @@ const CocktailList = () => {
   const { cocktails, loading } = useGlobalContext();
 
   if (loading) {
-    return <Loading />;
+    return <Loading />
   }
 
   if (cocktails.lenght < 1) {
