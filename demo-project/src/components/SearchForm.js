@@ -1,7 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "../context";
 
-const SearchForm = () => {
+export default function SearchForm() {
   const { setSearchTerm } = useGlobalContext();
   const searchValue = React.useRef("");
 
@@ -9,11 +9,11 @@ const SearchForm = () => {
     searchValue.current.focus();
   }, []);
 
-  const searchCocktail = () => {
+  function searchCocktail() {
     setSearchTerm(searchValue.current.value);
   };
 
-  const handleSubmit = (e) => {
+ function handleSubmit(e) {
     e.preventDefault();
   };
 
@@ -34,4 +34,3 @@ const SearchForm = () => {
   );
 };
 
-export default SearchForm;
