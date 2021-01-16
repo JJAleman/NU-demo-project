@@ -1,10 +1,13 @@
 import React from "react";
+import CocktailList from "../components/CocktailList"
+import SearchFrom from "../components/SearchForm"
 
-function Home() {
+const Home = () => {
     return (
-        <div>
-            Home Page
-        </div>
+        <main>
+            <SearchFrom/>
+            <CocktailList/>
+        </main>
     )
 }
 
