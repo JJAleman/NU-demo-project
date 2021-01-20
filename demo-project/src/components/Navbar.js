@@ -1,5 +1,6 @@
 import React from "react";
 import  { Link } from "react-router-dom";
+import { ReactComponent as Logo } from "../images/vector/default.svg";
 
 
 function Navbar() {
@@ -7,8 +8,9 @@ function Navbar() {
         <nav className="navbar">
             <div className="nav-center">
                 <Link to="/">
-                    {/* this h1 will be changed to img once I have a logo created */}
-                    <h1 className="logo">Logo Will Go here</h1>
+                    <h1 className="logo">
+                        <Logo/>
+                    </h1>
                 </Link>
                 <ul className="nav-links">
                     <li>
